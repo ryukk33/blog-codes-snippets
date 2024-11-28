@@ -10,7 +10,7 @@ import (
 	"unsafe"
 )
 
-// DecodeIPv4 takes an IPv4 string and returns the corresponding 4 bytes
+// IPv4 decoding
 func DecodeIPv4(ip string) ([]byte, error) {
 	parts := strings.Split(ip, ".")
 	if len(parts) != 4 {
