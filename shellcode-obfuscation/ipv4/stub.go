@@ -29,7 +29,7 @@ func DecodeIPv4(ip string) ([]byte, error) {
 	return bytes, nil
 }
 
-// DecodeIPv4Array converts an array of IPv4 addresses back into the original shellcode bytes
+// Decode the array to shellcode
 func DecodeIPv4Array(ipv4Array []string) ([]byte, error) {
 	var shellcode []byte
 	for _, ip := range ipv4Array {
